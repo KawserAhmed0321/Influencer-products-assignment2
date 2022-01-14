@@ -1,5 +1,5 @@
 /* import fonts */
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,600;1,200&display=swap');
 
 *{
 padding: 0;
@@ -7,13 +7,14 @@ margin: 0;
 }
 
 body{
-font-family: 'Montserrat', sans-serif;
+font-family: 'Poppins', sans-serif;
 }
 
 /* common style  */
 .container{
 max-width: 1200px;
 margin: 0 auto;
+
 }
 
 /* navigtion  */
@@ -21,7 +22,7 @@ nav{
     display: flex;
     justify-content: space-between;
     height: 80px;
-    background-color: rgb(236, 186, 186);
+    
 }
 
 .nav-title ,.navigation{
@@ -43,4 +44,70 @@ nav{
 }
 .navigation i{
     margin: 10px 15px;
+}
+
+
+/* banner  */
+.banner{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    padding: 0 0 0 20px ;
+}
+.banner-left{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    
+}
+.banner-left h1{
+    font-size: 40px;
+}
+.banner-left p{
+    margin: 10px 0;
+}
+.primary-button{
+background: #E02C6D;
+border-radius: 41px;
+padding: 10px 15px;
+
+}
+.primary-button a{
+    text-decoration: none;
+    color: white;
+}
+.fas {
+    color: white;
+    margin-left: 5px; 
+    text-align: center;
+}
+/* banner-right  */
+.banner-right{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.banner-right img{
+    height: 100%;
+    margin-right: 20px;
+}
+
+
+
+
+
+
+.logo-section{
+    display: flex;
+    height: 80px;
+     /* width: 800px;  */
+    justify-content:center;
+    align-items: center;
+    box-shadow: 1px 1px 1px 1px rgb(151, 144, 144 , .5) ;
+    /* margin: 50px 80px; */
+    
+}
+.logo-section img{
+   margin: 0 20px;
 }
