@@ -14,7 +14,17 @@ font-family: 'Poppins', sans-serif;
 .container{
 max-width: 1200px;
 margin: 0 auto;
+/* padding: 0 30px; */
+margin-bottom: 80px;
 
+}
+.title{
+     display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    
+    
 }
 
 /* navigtion  */
@@ -24,14 +34,11 @@ nav{
     height: 80px;
     
 }
-
-.nav-title ,.navigation{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 30px;
-    
+.title h3{
+font-size: 25px;
 }
+
+
 .navigation li{
     list-style-type: none;
     
@@ -49,6 +56,7 @@ nav{
 
 /* banner  */
 .banner{
+    margin-top: 100px;
     display: grid;
     grid-template-columns: repeat(2,1fr);
     padding: 0 0 0 20px ;
@@ -61,10 +69,11 @@ nav{
     
 }
 .banner-left h1{
-    font-size: 40px;
+    font-size: 50px;
 }
 .banner-left p{
-    margin: 10px 0;
+    margin: 20px 0;
+    /* font-size: 20px; */
 }
 .primary-button{
 background: #E02C6D;
@@ -85,7 +94,7 @@ padding: 10px 15px;
 .banner-right{
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items:flex-end;
     
 }
 .banner-right img{
@@ -93,21 +102,52 @@ padding: 10px 15px;
     margin-right: 20px;
 }
 
-
-
-
-
+/* logo-section start  */
 
 .logo-section{
     display: flex;
-    height: 80px;
-     /* width: 800px;  */
     justify-content:center;
-    align-items: center;
-    box-shadow: 1px 1px 1px 1px rgb(151, 144, 144 , .5) ;
-    /* margin: 50px 80px; */
-    
+    align-items:center;
+    margin-bottom: 50px;
+  
+   
 }
 .logo-section img{
-   margin: 0 20px;
+   margin:20px;
 }
+/* main section start  */
+
+.collections{
+display: grid;
+grid-template-columns: repeat(3,1fr);
+gap: 30px;
+
+
+
+}
+.collection{
+width: 300px;
+height: 400px;
+box-shadow: 4px 4px 5px gray;
+padding: 30px;
+border-radius: 5px;
+
+}
+.collection img{
+  height: 256px;
+  width: 300px;
+}
+.collection, .rating{
+    display: inline-block;
+
+}
+.collection p{
+    font-size: 20px;
+}
+.collection-info p{
+    color: gray;
+    line-height:1.2;
+    font-size: 15px;
+}
+
+
