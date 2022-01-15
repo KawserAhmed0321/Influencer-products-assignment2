@@ -12,7 +12,7 @@ font-family: 'Poppins', sans-serif;
 
 /* common style  */
 .container{
-max-width:1200px;
+width:1200px; 
 margin:0 auto;
 margin-bottom: 80px;
 
@@ -48,9 +48,7 @@ font-size: 30px;
     margin: 10px 10px;
     padding: 10px ;
 }
-.navigation i{
-    margin: 10px 15px;
-}
+
 
 
 /* banner  */
@@ -58,7 +56,7 @@ font-size: 30px;
     margin-top: 100px;
     display: grid;
     grid-template-columns: repeat(2,1fr);
-    padding: 0 0 0 20px ;
+    padding-left: 20px;
 }
 .banner-left{
     display: flex;
@@ -76,17 +74,24 @@ font-size: 30px;
 }
 .primary-button{
 background: #E02C6D;
-border-radius: 41px;
+border-radius: 20px;
 padding: 10px 15px;
+margin-bottom: 5px;
+box-shadow: 4px 4px 4px gray;
+position: relative;
+top: 0;
 
+}
+.primary-button:active{
+    top: 5px;
 }
 .primary-button a{
     text-decoration: none;
     color: white;
 }
 .fas {
-    color: white;
-    margin-left: 5px; 
+    color: black;
+    margin-left: 10px; 
     text-align: center;
 }
 /* banner-right  */
@@ -153,27 +158,39 @@ border-radius: 2px;
     line-height:1.2;
     font-size: 15px;
 }
+.checked{
+    color: gold;
 }
- .checked{
-    color: orangered;
-    
-}
-.see-more{
-    text-align: right;
-    margin-top: 40px;
-    margin-right: 80px;
-}
-.see-more a{
- text-decoration: none;
- padding: 10px;
- background-color: orchid;
+
+.button{
+ display: flex; 
+ justify-content: flex-end;
+align-items: center;
+border-radius: 41px;
+padding: 10px 15px;
+
 
 }
+.button a{
+    text-decoration: none;
+    color: black;
+    color: #E02C6D;
+  
+}
+.button, .a{
+    color: #E02C6D;
+
+}
+
 /* last-section */
 
 .right h1{
     white-space: nowrap;
     font-size: 30px;
+}
+.right p{
+    text-align: justify;
+    padding-right: 30px;
 }
 /* foooter  */
 .footer{
@@ -184,4 +201,67 @@ border-radius: 2px;
     height: 200px;
     background-color: black;
     color: white;
+    
 }
+
+.icon i{
+    padding: 0 5px;
+}
+
+
+/* responsive */
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  
+    .navigation li a{
+    display: none;
+}
+
+.nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.title h3{
+    display: flex;
+    text-align: center;
+}
+.banner,
+.collections{
+   grid-template-columns: 1fr;
+   height: fit-content;
+   justify-content: center;
+    align-items: center;
+     
+  }
+  
+  .banner-left{
+    order: 2;
+    justify-content: center;
+    align-items: center;
+  }
+  .banner-left h1{
+      font-size: 20px;
+  }
+
+  .banner-right{
+      text-align: center;
+      justify-content: center;
+    align-items: center;
+  }
+  .banner-right img{
+      max-width: 300px;
+      
+  }
+  .logo-section{
+      display: block;
+  }
+  
+ .footer-section{
+     position: static; 
+ }
+
+
+}
+
