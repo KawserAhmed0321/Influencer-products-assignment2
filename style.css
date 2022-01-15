@@ -12,9 +12,8 @@ font-family: 'Poppins', sans-serif;
 
 /* common style  */
 .container{
-max-width: 1200px;
-margin: 0 auto;
-/* padding: 0 30px; */
+max-width:1200px;
+margin:0 auto;
 margin-bottom: 80px;
 
 }
@@ -35,7 +34,7 @@ nav{
     
 }
 .title h3{
-font-size: 25px;
+font-size: 30px;
 }
 
 
@@ -46,7 +45,7 @@ font-size: 25px;
 .navigation li a{
     text-decoration: none;
     color: black;
-    margin: 10px 15px;
+    margin: 10px 10px;
     padding: 10px ;
 }
 .navigation i{
@@ -116,22 +115,27 @@ padding: 10px 15px;
    margin:20px;
 }
 /* main section start  */
-
+.Popular-Collection h3{
+    font-size: 35px;
+}
 .collections{
 display: grid;
 grid-template-columns: repeat(3,1fr);
-gap: 30px;
-
-
-
+gap: 20px;
+justify-content: center;
+justify-items: center;
+align-items: center;
 }
 .collection{
 width: 300px;
 height: 400px;
 box-shadow: 4px 4px 5px gray;
-padding: 30px;
-border-radius: 5px;
+padding:10px 10px 30px 10px;
+border-radius: 2px;
 
+}
+.collection h3{
+    font-size: 30px;
 }
 .collection img{
   height: 256px;
@@ -149,5 +153,35 @@ border-radius: 5px;
     line-height:1.2;
     font-size: 15px;
 }
+}
+ .checked{
+    color: orangered;
+    
+}
+.see-more{
+    text-align: right;
+    margin-top: 40px;
+    margin-right: 80px;
+}
+.see-more a{
+ text-decoration: none;
+ padding: 10px;
+ background-color: orchid;
 
+}
+/* last-section */
 
+.right h1{
+    white-space: nowrap;
+    font-size: 30px;
+}
+/* foooter  */
+.footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    background-color: black;
+    color: white;
+}
