@@ -4,6 +4,7 @@
 *{
 padding: 0;
 margin: 0;
+box-sizing: border-box;
 }
 
 body{
@@ -71,7 +72,7 @@ font-size: 30px;
 .banner-left h1{
     font-size: 50px;
 }
-.banner-left p{
+.p{
     margin: 20px 0;
     /* font-size: 20px; */
 }
@@ -136,7 +137,7 @@ align-items: center;
 }
 .collection{
 width: 300px;
-height: 400px;
+height: 450px;
 box-shadow: 4px 4px 5px gray;
 padding:10px 10px 30px 10px;
 border-radius: 2px;
@@ -191,20 +192,26 @@ padding: 10px 15px;
     white-space: nowrap;
     font-size: 30px;
 }
-.right p{
+.p{
     text-align: justify;
     padding-right: 30px;
 }
 /* foooter  */
-.footer{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+
+footer{
+   
+    background: #111;
     height: 200px;
-    background-color: black;
-    color: white;
-    
+    width: 100vw;
+    padding-top: 80px;
+    color: #fff;
+}
+.footer-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
 }
 
 .icon i{
@@ -262,7 +269,13 @@ padding: 10px 15px;
   }
   
  .footer-section{
-     position: static; 
+   max-width: 1200px;
+     
+margin:0 auto;
+margin-bottom: 80px;
+ }
+ .p{
+     width: 300px;
  }
 
 
