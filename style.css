@@ -48,6 +48,9 @@ font-size: 30px;
     margin: 10px 10px;
     padding: 10px ;
 }
+.navigation i{
+    color: black;
+}
 
 
 
@@ -90,7 +93,7 @@ top: 0;
     color: white;
 }
 .fas {
-    color: black;
+    color: white;
     margin-left: 10px; 
     text-align: center;
 }
